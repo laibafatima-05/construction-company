@@ -329,16 +329,18 @@ html, body {
     justify-content: center;
     width: 40px;
     height: 40px;
+    border: 1px solid rgb(15, 15, 75) ;
     border-radius: 50%;
     color: rgb(15, 15, 75);
     text-decoration: none;
-    margin-left: 8px;
+    margin-left: 3px;
     transition: 0.3s;
 }
 .follow-heading {
     font-size: 24px;
-    position: relative;
+    position: static;
     left: -32px;
+    text-align: center;
 }
 
 /* Policies */
@@ -361,6 +363,7 @@ html, body {
 .social-links a:hover {
     background-color: rgb(226, 226, 235);
     color: white;
+    border-color: rgb(15, 15, 75) ;
 }
 .social-links {
     padding-right: 25px;

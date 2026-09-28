@@ -49,7 +49,7 @@ https://construction-company-inky.vercel.app/
 Frontend Developer
 
 * GitHub: https://github.com/laibafatima-05
-* LinkedIn: https://www.linkedin.com/in/lyba-fatima?
+* LinkedIn: https://www.linkedin.com/in/lyba-fatima
 
 ## 📄License 
 

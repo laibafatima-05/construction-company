@@ -36,7 +36,7 @@ https://construction-company-inky.vercel.app/
 * Contact section with company details and inquiry information
 * Footer with social links and contact details
 
-## Built With
+## 🛠️Built With
 
 * **HTML5** - page structure
 * **CSS3** - custom styling (colors, typography, hover effects)
@@ -47,6 +47,6 @@ https://construction-company-inky.vercel.app/
 
 Laiba Fatima
 
-## License 
+## 📄License 
 
 The project is open source and available for personal or educational use.

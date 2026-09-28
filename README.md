@@ -45,7 +45,11 @@ https://construction-company-inky.vercel.app/
 
 ## ✍️Author 
 
-Laiba Fatima
+**Laiba Fatima**
+Frontend Developer
+
+* GitHub: https://github.com/laibafatima-05
+* LinkedIn: https://www.linkedin.com/in/lyba-fatima?
 
 ## 📄License 
 

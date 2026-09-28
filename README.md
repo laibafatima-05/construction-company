@@ -1,4 +1,4 @@
-## Construction Company Website
+## Construction Company Website🏗️
 
 Construction company website is a simple and responsive website designed to present a construction company's services, projects and contact information.The website provides a clean and user-friendly interface for visitors to explore the company's work and services.
 
@@ -43,7 +43,7 @@ https://construction-company-inky.vercel.app/
 * **Bootstrap 5.3.8** - responsive grid, navbar, and utility classes
 * **Font Awesome 6.5.0** - social media icons
 
-## Author 
+## ✍️Author 
 
 Laiba Fatima
 

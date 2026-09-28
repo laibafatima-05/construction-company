@@ -1,11 +1,11 @@
-# Construction Company Website
+## Construction Company Website
 
 Construction company website is a simple and responsive website designed to present a construction company's services, projects and contact information.The website provides a clean and user-friendly interface for visitors to explore the company's work and services.
 
-## Live Demo
+## 🔗Live Demo
 https://construction-company-inky.vercel.app/
 
-## Screenshots
+## 📸Screenshots
 <table>
    <tr>
      <td align="center"><b>Home Page</b><br><img src="screenshots/home.png" width="400"></td>
@@ -24,7 +24,7 @@ https://construction-company-inky.vercel.app/
    </tr>
 </table>
 
-## Features
+## ✨Features
 
 * Fully responsive layout (mobile, tablet, desktop)
 * Sticky/collapsible Bootstrap navbar with smooth scroll navigation

@@ -334,28 +334,32 @@
             <div class="col-12 col-lg-6">
                 <h3 class="section-heading">Get In Touch</h3>
                 <div class="contact-form-card p-4 mt-5">
-                    <form>
+                    <form id="contactForm">
                         <div class="mb-3">
                             <label class="form-label">Name</label>
                             <input
-                                type="text" class="form-control" rows="3"
+                                type="text" class="form-control" id="name"
                                 placeholder="Enter full name">
+                            <p id="nameError" class="text-danger mb-0"></p>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Email</label>
                             <input
-                                type="email" class="form-control" rows="3"
+                                type="email" class="form-control" id="email"
                                 placeholder="Enter your email">
+                            <p id="emailError" class="text-danger mb-0"></p>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Phone</label>
-                            <input type="tel" class="form-control" rows="3"
+                            <input type="tel" class="form-control" id="phone"
                                 placeholder="Enter your phone number">
+                            <p id="phoneError" class="text-danger mb-0"></p>    
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Message</label>
-                            <textarea class="form-control" rows="5"
+                            <textarea class="form-control" id="message" rows="5"
                                 placeholder="Write your message"></textarea>
+                            <p id="messageError" class="text-danger mb-0"></p>
                         </div>
                         <button type="submit" class="btn quote-btn px-5 py-2 rounded-3">
                             Submit Request
@@ -373,12 +377,16 @@
                <h5 class="footer-newsletter-heading">Join Our Newsletter</h5>
                 <p class="footer-newsletter-text">
                  Subscribe for the latest updates.</p>
+                 <form id="newsletterForm">
                 <div class="newsletter-form d-flex mx-auto mx-lg-0">
-                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <input type="email" class="form-control" id="newsletterEmail"
+                     placeholder="Enter your email">
                     <button type="submit" class="btn newsletter-btn">
                         Submit
                     </button>
                 </div>
+                  <p id="newsletterError" class="text-danger mb-0"></p>
+              </form>
             </div>
 
             <div class="col-12 col-lg-4">
@@ -412,4 +420,110 @@
         </div>
     </div>
 </footer>
+
+<script>
+   function validateForm() {
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    let nameError = document.getElementById("nameError");
+    let emailError = document.getElementById("emailError");
+    let phoneError = document.getElementById("phoneError");
+    let messageError = document.getElementById("messageError");
+
+    nameError.textContent = "";
+    emailError.textContent = "";
+    phoneError.textContent = "";
+    messageError.textContent = "";
+
+    let valid = true;
+
+    if (name === "") {
+        nameError.textContent = "Name is required.";
+        valid = false;
+    } 
+    else if (name[0] !== name[0].toUpperCase()) {
+
+        nameError.textContent = "First letter should be capital.";
+        valid = false;
+    }
+    if (email === "") {
+
+        emailError.textContent = "Email is required.";
+        valid = false;
+    }
+    else if (!email.includes("@")) {
+
+        emailError.textContent = "Incorrect email.";
+        valid = false;
+    }
+    if (phone === "") {
+
+        phoneError.textContent = "Phone number is required.";
+        valid = false;
+    }
+    if (message === "") {
+
+        messageError.textContent = "Message is required.";
+        valid = false;
+    }
+    if (valid) {
+
+        alert("Your request has been submitted successfully.");
+    }
+}
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+    validateForm();
+});
+document.getElementById("name").addEventListener("input", function() {
+    document.getElementById("nameError").textContent = "";
+});
+
+document.getElementById("email").addEventListener("input", function() {
+    document.getElementById("emailError").textContent = "";
+});
+
+document.getElementById("phone").addEventListener("input", function() {
+    document.getElementById("phoneError").textContent = "";
+});
+
+document.getElementById("message").addEventListener("input", function() {
+    document.getElementById("messageError").textContent = "";
+});
+   function validateNewsletter() {
+
+    let email = document.getElementById("newsletterEmail").value;
+    let error = document.getElementById("newsletterError");
+
+    error.textContent = "";
+
+    if (email === "") {
+
+        error.textContent = "Email is required.";
+
+    } else if (!email.includes("@")) {
+
+        error.textContent = "Incorrect email.";
+
+    } else {
+
+        alert("Successfully subscribed!");
+
+    }
+}
+document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+    validateNewsletter();
+});
+
+document.getElementById("newsletterEmail").addEventListener("input", function() {
+    document.getElementById("newsletterError").textContent = "";
+});
+</script>
 </body>
